@@ -5,10 +5,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Weather App</title>
 </head>
 
 <body>
+    <div class="app-container">
+        <div id="loading-indicator" class="loading-indicator">
+            <i class="fa-solid fa-spinner fa-spin"></i>
+        </div>
+        <form id="form">
+            <label for="city-input" class="visually-hidden">Enter city name</label>
+            <input type="text" name="city-input" id="city-input" placeholder="Enter city name">
+            <button id="search-btn" aria-label="Search for city"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+        <div class="weather-data">
+            <div class="temperature-info">
+                <img id="weather-img" src="./assets/clouds.png" alt="clouds">
+                <h1 id="temperature-display">22&deg;C</h1>
+                <h1 id="city-display">California</h1>
+            </div>
+            <div class="humidity-wind-info">
+                <div class="humidity-display">
+                    <img src="./assets/humidity.png" alt="Humidity icon">
+                    <div>
+                        <span id="humidity-percentage">64%</span>
+                        <span>Humidity</span>
+                    </div>
+                </div>
+                <div class="wind-display">
+                    <img src="./assets/wind.png" alt="Wind icon">
+                    <div>
+                        <span id="wind-speed">10.29 km/h</span>
+                        <span>Wind Speed</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="js/main.js" type="module"></script>
 </body>
