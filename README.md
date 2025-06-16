@@ -2,7 +2,7 @@
 
 A simple and elegant weather application built with React and Vite. This app allows users to search for the current weather and forecast of any city worldwide.
 
-🔗 **Live Demo:** [https://focusly-prod.netlify.app](https://weather-prod.netlify.app)
+🔗 **Live Demo:** [https://focusly-prod.netlify.app](https://weather-prod.netlify.app]
 
 ## 📸 Preview
 
